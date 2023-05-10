@@ -10,4 +10,10 @@ resource "azurerm_linux_virtual_machine_scale_set" "this" {
   do_not_run_extensions_on_overprovisioned_machines = true
   upgrade_mode                    = "Manual"
   tags                            = local.tags
+  source_image_reference {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
+    version   = "latest"
+  }
 
