@@ -1,0 +1,13 @@
+resource "azurerm_linux_virtual_machine_scale_set" "this" {
+  name                            = format("%s", local.vm_name)
+  resource_group_name             = var.resource_group_name
+  location                        = var.location
+  sku                             = var.sku
+  instances                       = 0
+  admin_username                  = var.username
+  admin_password                  = var.password
+  disable_password_authentication = false
+  do_not_run_extensions_on_overprovisioned_machines = true
+  upgrade_mode                    = "Manual"
+  tags                            = local.tags
+
