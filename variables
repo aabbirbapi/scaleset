@@ -27,3 +27,21 @@ variable tags {
 variable subnet_id {
   description = "Map of subnet objects. name, cidr, and service_endpoints supported"
 }
+
+variable owner {
+  description = "POC for this project"
+  default     = "unknown"
+}
+
+variable vendor {
+  description = "Service provider responsible for project"
+}
+
+variable creator {
+  description = "Person/Team responsible for resource"
+}
+
+variable sku {
+  description = "Person/Team responsible for resource"
+}
+
