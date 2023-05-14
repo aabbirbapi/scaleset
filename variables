@@ -1,1 +1,16 @@
 
+variable role {
+  description = "This determines the purpose of vnet. Example dmz, aks, transit etc"
+}
+
+variable client_name {
+  description = "This determines the client. Ex - Voyager, Mars, Dr.Comp"
+}
+
+variable resource_group_name {
+  description = "Default resource group name that the network will be created in."
+}
+
+variable location {
+  description = "The location/region where the core network will be created. The full list of Azure regions can be found at https://azure.microsoft.com/regions"
+}
