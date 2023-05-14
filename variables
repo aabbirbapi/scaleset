@@ -45,3 +45,11 @@ variable sku {
   description = "Person/Team responsible for resource"
 }
 
+variable username {
+  description = "Person/Team responsible for resource"
+}
+
+variable password {
+  description = "Person/Team responsible for resource"
+}
+
